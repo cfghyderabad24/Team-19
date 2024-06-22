@@ -9,6 +9,8 @@
 .student-details {
   background: #fff;
   padding: 20px;
+  width: 700px;
+  height: 600px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
