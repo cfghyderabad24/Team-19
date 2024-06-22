@@ -45,11 +45,13 @@ html, body {
 }
 
 .underline {
+    display: inline-block;
     width: 61px;
     height: 6px;
     background: #3c009d;
     border-radius: 9px;
-    margin-top: 10px; /* Adjust spacing above the underline */
+    margin-top: 10px auto; /* Adjust spacing above the underline */
+    
 }
 
 /* Input container styles */

@@ -1,6 +1,6 @@
 import React from 'react';
 import './login.css';
-import {useState} from "react";
+
 
 import user_icon from '../Assets/person.png'
 import email_icon from '../Assets/email.png'
@@ -23,7 +23,7 @@ const Login=()=>{
                 </div>
                 <div className="input">
                     <img src={email_icon} alt=""/>
-                    <input type="email" placeholder="Email Id"/>
+                    <input type="text" placeholder="NGO"/>
                 </div>
                 <div className="input">
                     <img src={password_icon} alt=""/>
@@ -35,7 +35,7 @@ const Login=()=>{
             
             <div className="forgot-password">Lost Password? <span>Click Here!</span></div>
             <div className="submit-container">
-                <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("")}}>Login</div>
+                <div className="submit">Login</div>
             </div>
         </div>
         
