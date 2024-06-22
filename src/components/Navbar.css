@@ -1,0 +1,40 @@
+/* Basic styling for the navigation bar */
+.navbar {
+  background-color: #333; /* Background color */
+  overflow: hidden; /* Clear floats */
+  position: fixed; /* Fixed position */
+  top: 0; /* Position at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Style for navigation bar links */
+.navbar ul {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove list bullets */
+  display: flex; 
+  /* Flexbox layout */
+  
+}
+
+.navbar li {
+  float: left; /* Float the links to the left */
+  display: block; /* Display links as blocks */
+  color: white; /* Text color */
+  text-align: center; /* Center-align the text */
+  padding: 14px 16px; /* Padding around the links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Change color on hover */
+.navbar li:hover {
+  background-color: #ddd; /* Background color on hover */
+  color: black; /* Text color on hover */
+}
+
+.searchbar {
+  position: absolute;
+  top: 15px; /* Adjust top position if needed */
+  right: 20px; /* Position it on the right */
+}
