@@ -9,7 +9,7 @@ const {
   getAllCustomers,
   getCustomerDetails,
   deleteCustomer,
-} = require("../controllers/Customer");
+} = require("../controllers/customerController");
 
 // Importing Middlewares
 // const { auth, isAdmin } = require("../middleware/auth");
@@ -17,18 +17,18 @@ const {
 
 
 // Create a new customer
-router.post("/createCustomer", auth, isAdmin, createCustomer);
+router.post("/createCustomer",createCustomer);
 
 // Edit customer details
-router.post("/editCustomer", auth, isAdmin, editCustomer);
+router.post("/editCustomer", editCustomer);
 
 // Get all customers
-router.get("/getAllCustomers", auth, isAdmin, getAllCustomers);
+router.get("/getAllCustomers", getAllCustomers);
 
 // Get details of a specific customer
-router.post("/getCustomerDetails", auth, isAdmin, getCustomerDetails);
+router.post("/getCustomerDetails", getCustomerDetails);
 
 // Delete a customer
-router.delete("/deleteCustomer", auth, isAdmin, deleteCustomer);
+router.delete("/deleteCustomer", deleteCustomer);
 
 module.exports = router;
