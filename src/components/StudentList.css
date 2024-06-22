@@ -1,0 +1,72 @@
+/* StudentList.css */
+
+.student-list {
+  width: 100%;
+  max-width: 1200px; /* Limiting maximum width to 1200px */
+  margin: 40px auto; /* Centering the table horizontally with margin */
+}
+
+.student-list h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 50px; /* Increasing font size */
+  color: black; /* Changing title color to black */
+}
+
+.student-list table {
+  width: 1000px; /* Ensuring the table takes up full width of its container */
+  height: 30vh; /* Taking 30% of the viewport height */
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow to the table */
+  margin: 0 auto;
+
+  padding: 0; /* Resetting padding */
+}
+
+.student-list th,
+.student-list td {
+  border: 1px solid black;
+  padding: 20px; /* Increasing padding for table cells */
+  text-align: center;
+  font-size: 25px; /* Increasing font size */
+}
+
+.student-list th {
+  background-color: #f2f2f2; /* Light grey background for table header */
+  color: black; /* Setting header text color to black */
+}
+
+.student-list td {
+  background-color: #fff; /* White background for table cells */
+  color: #333; /* Dark grey text color for table cell text */
+  font-size: 20px;
+}
+
+.student-list .button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px; /* Increasing font size for buttons */
+  padding: 12px 20px; /* Adding padding to buttons */
+  border-radius: 4px; /* Adding rounded corners to buttons */
+  margin: 0 8px; /* Adding margin between buttons */
+  text-decoration: underline; /* Underline button text */
+}
+
+.student-list .button.accept {
+  background-color: #28a745; /* Green background for accept button */
+  color: white; /* White text for accept button */
+}
+
+.student-list .button.reject {
+  background-color: #dc3545; /* Red background for reject button */
+  color: white; /* White text for reject button */
+}
+
+.student-list .button.accept:hover {
+  background-color: #218838; /* Darker green on hover for accept button */
+}
+
+.student-list .button.reject:hover {
+  background-color: #c82333; /* Darker red on hover for reject button */
+}
