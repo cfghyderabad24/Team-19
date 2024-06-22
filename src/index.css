@@ -1,3 +1,118 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Reset some default styles for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure the html and body take up the full height of the viewport */
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Flexbox centering for the root element to center the content vertically and horizontally */
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(#2A00B7, #42006C); /* Gradient background */
+  }
+  
+  /* Container styling for the login component */
+  .container {
+    width: 400px; /* Set a fixed width for the container */
+    background: #fff;
+    padding: 20px; /* Add some padding inside the container */
+    border-radius: 8px; /* Slightly round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the container horizontally */
+  }
+  
+  /* Header styles */
+  .header {
+    text-align: center; /* Center text in header */
+    margin-bottom: 20px; /* Add some space below the header */
+  }
+  
+  .text {
+    color: #3c009d;
+    font-size: 36px; /* Reduce font size */
+    font-weight: 700;
+  }
+  
+  .underline {
+    width: 61px;
+    height: 6px;
+    background: #3c009d;
+    border-radius: 9px;
+    margin-top: 10px; /* Adjust spacing above the underline */
+  }
+  
+  /* Input container styles */
+  .inputs {
+    width: 100%; /* Take up full width of the container */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px; /* Adjust height of input container */
+    background: #eaeaea;
+    border-radius: 6px;
+    padding: 0 15px; /* Add padding inside the input container */
+  }
+  
+  .input img {
+    width: 30px; /* Adjust icon width */
+    height: 30px; /* Adjust icon height */
+    margin-left: 10px; /* Add space between icon and input */
+  }
+  
+  .input input {
+    flex: 1;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px; /* Adjust font size */
+    color: #797979;
+  }
+  
+  /* Forgot password link styles */
+  .forgt-password {
+    margin-top: 10px; /* Adjust margin spacing */
+    text-align: center;
+    color: #3c009d;
+  }
+  
+  .forgt-password span {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  /* Submit button styles */
+  .submit-container {
+    margin-top: 20px; /* Adjust margin spacing */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submit {
+    background-color: #3c009d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
