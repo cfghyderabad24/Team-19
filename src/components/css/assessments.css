@@ -1,0 +1,35 @@
+/* Assessments.css */
+
+.assessments-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.assessment-category {
+    margin-bottom: 30px;
+}
+
+.assessment-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display three assessments per row */
+    gap: 20px; /* Adjust gap between assessments */
+}
+
+.assessment-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.assessment-item h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.assessment-item p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
