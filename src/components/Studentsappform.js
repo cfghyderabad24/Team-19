@@ -11,6 +11,7 @@ function Studentsappform() {
     return (
         <div className="container d-flex justify-content-center align-items-center" style={{ height: '200vh' }}>
             <div className="card shadow p-4 m-3" style={{ width: '600px' }}>
+                <h3 className="card-title text-center">Student Application Form</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-3">
                         <label htmlFor="name" className="form-label">Name</label>
