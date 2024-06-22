@@ -1,13 +1,40 @@
 import "./App.css";
+import StudentForm from './components/Studentsappform'; 
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <main class="flex justify-center gap-4 flex-col min-h-screen">
-      <h1 class="text-3xl text-center font-bold underline">React & Tailwind CSS Starter Pack</h1>
-      <p class="text-center text-xl">This is a starter pack for React & Tailwind CSS projects.</p>
-      <img src="https://bit.ly/3wsmzTy" alt="meme" class="mx-auto" />
-    </main>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/student-form">Student Form</Link>
+            </li>
+            {/* Add more navigation links as needed */}
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route exact path="/">
+            <div className="container home">
+              <h1>Welcome to St Bathevara Training Courses</h1>
+            </div>
+          </Route>
+          <Route path="/student-form">
+            <div className="container form">
+              <h3 className="card-title text-center">Student Application Form</h3>
+              <StudentForm />
+            </div>
+          </Route>
+          {/* Add more routes for other components */}
+        </Switch>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
