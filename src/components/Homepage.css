@@ -1,0 +1,66 @@
+.home-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increased minimum card width */
+    gap: 30px; /* Increased gap between cards */
+}
+
+.card {
+    border-radius: 12px; /* Larger border radius for rounded corners */
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow effect */
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    height: 100%; /* Ensure cards stretch to match height */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
+}
+
+.card-image {
+    width: 100%;
+    height: 250px; /* Increased image height for larger cards */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.8rem; /* Increased title font size */
+    margin-bottom: 15px; /* Increased margin bottom */
+}
+
+.card-description {
+    color: #555;
+    line-height: 1.6;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.8rem;
+}
+.body
+{
+    background-color: aqua;
+}

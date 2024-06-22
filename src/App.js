@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
@@ -8,9 +9,19 @@ import StudentDetails from './components/Students';
 import NGODetails from './components/Ngo';
 import VolunteerDetails from './components/Volunteer';
 import Header from './components/Header';
+=======
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+
+import About from './components/Aboutus';
+import HomePage from './components/Start_page';
+import Navbars from './components/Navbar';
+>>>>>>> b5cfec44605770fc06af8a1baa0ed821d6ed7a86
 
 const App = () => {
   return (
+<<<<<<< HEAD
     <Router>
       <Header/>
       <div style={{ display: 'flex' }}>
@@ -75,6 +86,17 @@ const App = () => {
 >>>>>>> 172ea40b8cad1343591fff6f6edc3d954803d6c7
       </div>
     </Router>
+=======
+    <React.Fragment>
+      <Router>
+        <Navbars />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Router>
+    </React.Fragment>
+>>>>>>> b5cfec44605770fc06af8a1baa0ed821d6ed7a86
   );
 };
 
