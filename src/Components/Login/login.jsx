@@ -6,7 +6,7 @@ import user_icon from '../Assets/person.png'
 import email_icon from '../Assets/email.png'
 import password_icon from '../Assets/password.png'
 
-const Login=()=>{
+const Login=({ onLogin })=>{
 
 
     return(
@@ -35,7 +35,7 @@ const Login=()=>{
             
             <div className="forgot-password">Lost Password? <span>Click Here!</span></div>
             <div className="submit-container">
-                <div className="submit">Login</div>
+                <div className="submit" onClick={onLogin}>Login</div>
             </div>
         </div>
         

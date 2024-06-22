@@ -17,7 +17,8 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: linear-gradient(#2A00B7, #42006C); /* Gradient background */
+    background-color: rgb(79, 79, 83); /* Gradient background */
+
   }
   
   /* Container styling for the login component */
