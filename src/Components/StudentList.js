@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './StudentList.css';
+import StudentDetails from './StudentDetails'; // Assuming StudentDetails component exists
 
-const StudentList = ({ students, onSelectStudent }) => {
+const StudentList = ({ students }) => {
+  const [selectedStudent, setSelectedStudent] = useState(null);
+
+  const handleViewDetails = (student) => {
+    setSelectedStudent(student);
+  };
+
+  const handleBackToList = () => {
+    setSelectedStudent(null);
+  };
+
+  if (selectedStudent) {
+    return <StudentDetails student={selectedStudent} onBack={handleBackToList} />;
+  }
+
   return (
     <div className="student-list">
       <h1>Student Details</h1>
@@ -16,7 +31,13 @@ const StudentList = ({ students, onSelectStudent }) => {
           {students.map((student) => (
             <tr key={student.id}>
               <td>
-                <button className="button" onClick={() => onSelectStudent(student)}>{student.name}</button>
+                <span>{student.name}</span>
+                <button
+                  className="view-details-button"
+                  onClick={() => handleViewDetails(student)}
+                >
+                  View Details
+                </button>
               </td>
               <td>
                 <button className="button accept">Accept</button>
