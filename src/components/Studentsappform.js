@@ -1,11 +1,24 @@
 import { useForm } from "react-hook-form";
-
+import axios from 'axios'
 function Studentsappform() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
         console.log(data);
         // Handle form submission logic here (e.g., send data to backend)
+        axios.post("http://localhost:4000/customer/createCustomer",{
+           name: data.name,
+        gender: data.gender,
+        percentage: data.percentage,
+        college: data.college,
+        stream: data.stream,
+        fathersOccupation: data.fatherOccupation,
+        income: data.annualIncome,
+        residenceArea: data.area,
+        NGO: data.ngoName
+
+
+        });
     };
 
     return (

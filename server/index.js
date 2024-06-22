@@ -1,6 +1,7 @@
 // 
 const express=require("express");
 const app = express();
+const cors = require("cors");
 const database = require("./config/database");
 const { cloudinaryConnect } = require("./config/cloudinary");
 
@@ -15,14 +16,23 @@ const PORT=4000;
 database.connect();
 // Middlewares
 app.use(express.json());
-
+app.use(cors({
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type,Authorization'
+  }));
 // Connecting to cloudinary
 cloudinaryConnect();
 
+// Configuring CORS
 
 //set up backend routes
 app.use("/customer",customerRoute);
 app.use("/ngo",ngoRoute);
+
+
+
+
 
 // Testing the server
 app.get("/", (req, res) => {
