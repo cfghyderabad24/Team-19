@@ -12,7 +12,7 @@ const PORT=4000;
 database.connect();
 // Middlewares
 app.use(express.json());
-app.use(cookieParser());
+
 
 //set up backend routes
 
