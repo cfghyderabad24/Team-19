@@ -8,12 +8,11 @@ import password_icon from '../Assets/password.png'
 
 const Login=()=>{
 
-    const [action,setAction]=useState("Login");
 
     return(
         <div className ='container'>
             <div className="header">
-                <div className="text">{action}</div>
+                <div className="text">Login</div>
                 <div className="underline"></div>
             </div>
             <div className ="inputs">
@@ -32,8 +31,9 @@ const Login=()=>{
                 </div>
             
             </div>
-            {action==="Login"?<div></div>:<div className="forgot-password">Lost Password? <span>Click Here!</span></div>}
             
+            
+            <div className="forgot-password">Lost Password? <span>Click Here!</span></div>
             <div className="submit-container">
                 <div className={action==="Login"?"submit gray":"submit"} onClick={()=>{setAction("")}}>Login</div>
             </div>
