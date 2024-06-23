@@ -15,11 +15,9 @@ function Navbars() {
             <Nav.Link href="/about">About Us</Nav.Link>
             <NavDropdown title="Login" id="basic-nav-dropdown">
               <NavDropdown.Item href="/student-form">Student</NavDropdown.Item>
-              <NavDropdown.Item href="/ngo">
-                NGO
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/volunteers">Volunteer</NavDropdown.Item>
-              <NavDropdown.Item href="/about">Founder</NavDropdown.Item>
+              <NavDropdown.Item href="/ngologin">NGO</NavDropdown.Item>
+              <NavDropdown.Item href="/volunteerLogin">Volunteer</NavDropdown.Item>
+              <NavDropdown.Item href="/aluminiForm">Alumini</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
           </Nav>
