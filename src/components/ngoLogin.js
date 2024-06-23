@@ -1,11 +1,13 @@
 import { useForm } from "react-hook-form";
-
+import axios from 'axios'
 function LoginForm() {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
         console.log(data);
+        axios.get("localhost:4000/ngo/login",{id:data.id,password:data.password});
         window.location.href = '/ngo';
+
         // Handle form submission logic here (e.g., send data to backend)
     };
 
