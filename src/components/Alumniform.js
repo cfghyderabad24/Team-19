@@ -5,13 +5,14 @@ function Formi() {
 
     const onSubmit = (data) => {
         console.log(data);
+        window.location.href = '/aluminiSubmit';
         // Handle form submission logic here (e.g., send data to backend)
     };
 
     return (
         <div className="container-fluid d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
             <div className="card shadow p-4" style={{ width: '500px' }}>
-                <h3 className="card-title text-center mb-4">Alumni volunteer registraton form</h3>
+                <h3 className="card-title text-center mb-4">Alumni volunteer registration form</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-3">
                         <label htmlFor="name" className="form-label">Name</label>

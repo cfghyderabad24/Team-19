@@ -1,0 +1,72 @@
+/* StudentList.css */
+
+.student-list {
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  
+  .student-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: black;
+    margin-bottom: 100px;
+  }
+  
+  .student-list table {
+    width: 1000px; /* Ensuring the table takes up full width of its container */
+    height: 30vh; /* Taking 30% of the viewport height */
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow to the table */
+    margin: 0 auto;
+  
+    padding: 0; /* Resetting padding */
+  }
+  
+  .student-list th,
+  .student-list td {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .student-list th {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  .student-list td {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .student-list .view-details-button {
+    background-color: #007bff; /* Blue background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px; /* Adjust margin to create space */
+  }
+  
+  .student-list .button.accept {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .student-list .button.reject {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .student-list .button:hover,
+  .student-list .view-details-button:hover {
+    text-decoration: none;
+  }
