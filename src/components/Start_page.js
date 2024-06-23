@@ -11,7 +11,7 @@ function HomePage() {
 
             <section className="cards-section">
                 <div className="card">
-                    <img src="https://static.vecteezy.com/system/resources/previews/007/931/694/non_2x/about-us-button-about-us-text-template-for-website-about-us-icon-flat-style-vector.jpg" alt="About Us" className="card-image" />
+                    <img src="https://www.careercomputerit.com/assets/img/about-us.png" alt="About Us" className="card-image" />
                     <div className="card-content">
                         <h3 className="card-title">About Us</h3>
                         <p className="card-description">Learn more about our mission and values.</p>
@@ -19,9 +19,9 @@ function HomePage() {
                 </div>
 
                 <div className="card">
-                    <img src=" https://static.vecteezy.com/system/resources/previews/007/931/694/non_2x/about-us-button-about-us-text-template-for-website-about-us-icon-flat-style-vector.jpg" alt="Programs" className="card-image" />
+                    <img src=" https://miro.medium.com/v2/resize:fit:1000/1*cFfa3LOIy4Kr8qadDGK1Lg.png"  alt="Programs" className="card-image" />
                     <div className="card-content">
-                        <h3 className="card-title">Programs</h3>
+                        <h3 className="card-title" ><a href='/dataAnalysis'>Programs</a></h3>
                         <p className="card-description">Discover our ongoing programs and initiatives.</p>
                     </div>
                 </div>

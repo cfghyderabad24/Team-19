@@ -35,8 +35,8 @@
 }
 
 .card-image {
-    width: 100%;
-    height: 250px; /* Increased image height for larger cards */
+    width: auto;
+    height: auto; /* Increased image height for larger cards */
     object-fit: cover;
 }
 

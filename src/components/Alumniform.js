@@ -5,14 +5,14 @@ function Formi() {
 
     const onSubmit = (data) => {
         console.log(data);
-        window.location.href = '/aluminiSubmit';
+        window.location.href = '/ngo';
         // Handle form submission logic here (e.g., send data to backend)
     };
 
     return (
         <div className="container-fluid d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
             <div className="card shadow p-4" style={{ width: '500px' }}>
-                <h3 className="card-title text-center mb-4">Alumni volunteer registration form</h3>
+                <h3 className="card-title text-center mb-4">Alumini Login Form</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-3">
                         <label htmlFor="name" className="form-label">Name</label>
@@ -38,24 +38,27 @@ function Formi() {
 
                     <div className="mb-3">
                         <label htmlFor="courseChosen" className="form-label">Course Chosen</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            id="courseChosen"
-                            {...register("courseChosen", { required: true })}
-                        />
+                        <select className="form-select" id="courseChosen" {...register("courseChosen", { required: true })}>
+                            <option value="">Select course</option>
+                            <option value="science">Science</option>
+                            <option value="commerce">Commerce</option>
+                            <option value="arts">Arts</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="medicine">Medicine</option>
+                            {/* Add more options as needed */}
+                        </select>
                         {errors.courseChosen && <span className="text-danger">This field is required</span>}
                     </div>
 
                     <div className="mb-3">
-                        <label htmlFor="areaOfResidence" className="form-label">Area of Residence</label>
+                        <label htmlFor="batchId" className="form-label">Batch ID</label>
                         <input
                             type="text"
                             className="form-control"
-                            id="areaOfResidence"
-                            {...register("areaOfResidence", { required: true })}
+                            id="batchId"
+                            {...register("batchId", { required: true })}
                         />
-                        {errors.areaOfResidence && <span className="text-danger">This field is required</span>}
+                        {errors.batchId && <span className="text-danger">This field is required</span>}
                     </div>
 
                     <button type="submit" className="btn btn-primary w-100">Submit</button>
