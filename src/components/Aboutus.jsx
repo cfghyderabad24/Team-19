@@ -12,7 +12,7 @@ function About() {
 
             <section className="cards-section">
                 <div className="card">
-                    <img src="https://imagetolink.com/ib/U63wgaayr1.png" width = "20px" alt="About Us" className="card-image" />
+                    <img src="https://imagetolink.com/ib/U63wgaayr1.png"  alt="About Us" className="card-image" />
                     <div className="card-content">
                         <h3 className="card-title">Mr. S. T. Bhatevara
                         </h3>
