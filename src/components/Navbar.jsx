@@ -14,12 +14,12 @@ function Navbars() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About Us</Nav.Link>
             <NavDropdown title="Login" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#studentlogin">Student</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="/student-form">Student</NavDropdown.Item>
+              <NavDropdown.Item href="/ngo">
                 NGO
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Volunteer</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Founder</NavDropdown.Item>
+              <NavDropdown.Item href="/volunteers">Volunteer</NavDropdown.Item>
+              <NavDropdown.Item href="/about">Founder</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
           </Nav>
